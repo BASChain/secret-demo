@@ -1,0 +1,38 @@
+{
+  "name": "website-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "clean:web": "rm -rf build/* && rm -rf tmp/*",
+    "rebuild": "npm run clean:web && npm run browserify:js",
+    "browserify:js": "browserify src/index.js -dv -o build/js/index-bundle.js",
+    "watchify:js": "watchify src/index.js -o build/js/index-bundle.js --dv",
+    "watch": "npm run watchify:js",
+    "serve": "lite-server -c .config/bs-config.json",
+    "start": "npm run rebuild && npm run serve",
+    "deploy": "node bin/publisher.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@flash:BASChain/secret-demo.git"
+  },
+  "author": "nbs",
+  "license": "MIT",
+  "dependencies": {
+    "fast-date-format": "^2.2.4",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.5",
+    "browserify": "^16.5.0",
+    "browserify-shim": "^3.8.14",
+    "dotenv": "^8.2.0",
+    "lite-server": "^2.5.4",
+    "shelljs": "^0.8.3"
+  }
+}

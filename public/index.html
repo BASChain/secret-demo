@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BigHugi">
+  <meta name="author" content="BigHugi">   
+  <title>BAS Lab</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.css">
+
+  <!-- custom -->
+  <link rel="stylesheet" href="css/main.css">   
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+<!--SVG SPRITE -->
+  <svg width="0" height="0" class="hidden">
+    <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook-square">
+      <path d="M786.285714 73.142857q68 0 116.285715 48.285714T950.857143 237.714286v548.571428q0 68-48.285714 116.285715T786.285714 950.857143h-107.428571v-340h113.714286l17.142857-132.571429h-130.857143V393.714286q0-32 13.428571-48t52.285715-16l69.714285-0.571429V210.857143q-36-5.142857-101.714285-5.142857-77.714286 0-124.285715 45.714285T541.714286 380.571429v97.714285H427.428571v132.571429h114.285715v340H237.714286q-68 0-116.285715-48.285714T73.142857 786.285714V237.714286q0-68 48.285714-116.285715T237.714286 73.142857h548.571428z" p-id="4457" fill="currentColor"></path>     
+    </symbol>
+    <symbol version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="twitter-square">
+      <path d="M933.799652 195.213054c0-58.295708-47.258327-105.554034-105.554034-105.554034l-633.119545 0c-58.295708 0-105.554034 47.258327-105.554034 105.554034l0 633.119545c0 58.295708 47.258327 105.554034 105.554034 105.554034l633.119545 0c58.295708 0 105.554034-47.258327 105.554034-105.554034L933.799652 195.213054zM794.009885 400.222217c0.274246 5.666046 0.454348 11.370978 0.454348 17.117866 0 174.804235-132.921335 376.370996-376.24206 376.370996-74.730005 0-143.974066-21.917172-202.532763-59.422368 10.352789 1.178849 21.366633 1.849114 32.073486 1.849114 61.97654 0 120.06247-21.173229 165.318186-56.629765-57.889455-1.102101-104.684224-39.315424-121.530914-91.889827 8.107655 1.532913 20.445658 2.399653 28.991288 2.399653 12.08013 0 19.148106-1.610684 30.245861-4.641717-60.488653-12.159948-102.601796-65.638953-102.601796-129.7102 0-0.586354 0-1.098008 0-1.64957 0 9.914814 34.714639 15.858176 56.399521 16.563234-35.498492-23.724331-68.75492-64.221674-68.75492-110.10877 0-24.201192 9.68764-46.946218 21.100574-66.505693 65.246003 80.048127 164.321486 132.699278 274.233781 138.249691-2.245134-9.679453-2.628874-19.794835-2.628874-30.144554 0-73.03848 59.628052-132.267443 132.705418-132.267443 38.055734 0 72.609715 16.096607 96.734158 41.792848 30.144554-5.978155 58.57814-16.960277 84.116793-32.109302-9.833973 30.852682-30.761608 56.82317-58.074673 73.158207 26.704199-3.182482 36.348859-10.29139 60.034305-20.760836 0.031722-0.048095-15.651468-0.090051-15.651468-0.138146l0 0.080841c0 0.022513 15.703657 0.035816 15.652492 0.058328C826.315662 358.346481 819.818691 381.603161 794.009885 400.222217z" p-id="1240" fill="currentColor"></path>      
+    </symbol>
+    <symbol version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="github-square">
+      <path d="M298.285714 772.571429q-4.571429 5.142857-11.428571-1.714286-7.428571-6.285714-2.285714-10.857143 4.571429-5.142857 11.428571 1.714286 6.857143 6.285714 2.285714 10.857143zm-24-34.857143q5.142857 6.857143 0 10.857143-4.571429 3.428571-9.714286-4t0-10.285714q5.142857-4 9.714286 3.428571zm-34.857143-34.285714q-2.857143 4-7.428571 1.142857-5.714286-2.857143-4-6.857143 1.714286-2.857143 7.428571-1.142857 5.714286 2.857143 4 6.857143zm17.714286 19.428571q-3.428571 4-9.142857-1.714286-5.142857-6.285714-1.142857-9.142857 3.428571-3.428571 9.142857 1.714286 5.142857 6.285714 1.142857 9.142857zm73.714286 64q-2.285714 6.857143-10.857143 3.428571-9.714286-2.285714-7.428571-8.571429t10.857143-4q9.142857 2.857143 7.428571 9.142857zm36 2.857143q0 6.285714-9.142857 6.285714-9.714286 1.142857-9.714286-6.285714 0-6.285714 9.142857-6.285714 9.714286-1.142857 9.714286 6.285714zm33.142857-5.714286q1.142857 5.714286-8 8t-10.285714-4.571429 8-8.571429q9.142857-1.142857 10.285714 5.142857zm550.857143-546.285714l0 548.571429q0 68-48.285714 116.285714t-116.285714 48.285714l-128 0q-9.142857 0-14-0.571429t-11.142857-2.857143-9.142857-8.285714-2.857143-15.714286l0-136.571429q0-55.428571-29.714286-81.142857 32.571429-3.428571 58.571429-10.285714t53.714286-22.285714 46.285714-38 30.285714-60 11.714286-86q0-69.142857-45.142857-117.714286 21.142857-52-4.571429-116.571429-16-5.142857-46.285714 6.285714t-52.571429 25.142857l-21.714286 13.714286q-53.142857-14.857143-109.714286-14.857143t-109.714286 14.857143q-9.142857-6.285714-24.285714-15.428571t-47.714286-22-49.142857-7.714286q-25.142857 64.571429-4 116.571429-45.142857 48.571429-45.142857 117.714286 0 48.571429 11.714286 85.714286t30 60 46 38.285714 53.714286 22.285714 58.571429 10.285714q-22.857143 20.571429-28 58.857143-12 5.714286-25.714286 8.571429t-32.571429 2.857143-37.428571-12.285714-31.714286-35.714286q-10.857143-18.285714-27.714286-29.714286t-28.285714-13.714286l-11.428571-1.714286q-12 0-16.571429 2.571429t-2.857143 6.571429 5.142857 8 7.428571 6.857143l4 2.857143q12.571429 5.714286 24.857143 21.714286t18 29.142857l5.714286 13.142857q7.428571 21.714286 25.142857 35.142857t38.285714 17.142857 39.714286 4 31.714286-2l13.142857-2.285714q0 21.714286 2.857143 58.857143t2.857143 38.857143q0 12.571429-6.285714 19.142857t-12.571429 7.428571-18.857143 0.857143l-128 0q-68 0-116.285714-48.285714t-48.285714-116.285714l0-548.571429q0-68 48.285714-116.285714t116.285714-48.285714l548.571429 0q68 0 116.285714 48.285714t48.285714 116.285714z" p-id="2643" fill="currentColor"></path>      
+    </symbol>
+    <symbol version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="">
+      
+    </symbol>            
+  </svg>
+<!--SVG SPRITE -->
+
+
+
+<div class="container fixed-top d-none d-md-block" >
+  <nav id="MainNav" class="navbar navbar-expand-lg">    
+    <a href="#" class="navbar-brand">BAS Lab</a>
+    <button type="button" class="navbar-toggler navbar-toggler-right"
+      data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation"
+      >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="navbarResponsive" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-none">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#About" class="nav-link">About US</a>
+        </li>
+        <li class="nav-item">
+          <a href="#MainFooter" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>  
+<div class="anchor-link" id="PageTop"></div>
+  
+<!-- -->
+<div class="canvas-bg">
+  <canvas id=c ></canvas>  
+</div>
+
+<header class="masthead container" id="HeadContainer">
+  <div class="col-8 float-right">
+    <h2 class="text-center slogen"> 
+      The Blockchain Address Lookup
+    </h2>
+    <!--
+    <p class="slogen-detail none">
+      Focusing on blockchain technology, the company has developed a traffic based transmission protocol, based on which traffic can be accurately calculated and charged. 
+    </p>
+  -->
+  </div>     
+</header>
+
+<section id="About" class="about-section">
+  <div class="container">
+    <h3 class="section-title text-center">Demo introduction</h3>
+  </div>
+  <div class="container" >
+    <ul class="about-timeline">
+      <li>
+        <h4>blockchain technology</h4>
+        <p>
+          Focusing on blockchain technology, the company has developed a traffic based transmission protocol, based on which traffic can be accurately calculated and charged.
+        </p>
+      </li>
+      <li>
+        <h4>decentralized</h4>
+        <p>
+          The core advantage of the company is to reduce the cost and consumption at the geometric level through decentralized technology.
+        </p>        
+      </li>
+      <li>
+        <h4>distributed data transmission</h4>
+        <p>
+          Products can be used in distributed data transmission, power transmission and other fields.
+        </p>        
+      </li>
+      <li>
+        <h4>point-to-point</h4>
+        <p>
+          This technology ensures that no centralized billing server is needed, so that users with close physical distance and far logical distance can realize accurate billing through point-to-point technology, which greatly reduces the cost of equipment use and equipment loss.
+        </p>        
+      </li>
+      <li>
+        <h4>present business</h4>
+        <p>
+          At present, network infrastructure service providers set up equipment, maintain equipment, and get profits from users, and to some extent, they can monopolize the industry. But at the same time, the investment of hardware and infrastructure also reduces their income.
+        </p>
+      </li>
+      <li>
+        <h4>centralized billing mode</h4>
+        <p>
+          Under the traditional centralized billing mode, it causes huge bandwidth or power waste. In many cases, users who are physically close to each other need to transmit the traffic and power to the central server and then back to each other in order to accurately measure the user's consumption and billing.
+        </p>
+      </li>
+      <li>
+        <h4>new protocol</h4>
+        <p>
+          Under the new protocol, operators only need to wholesale traffic and develop standards for hardware equipment or sell hardware equipment directly, and users manage equipment and operation traffic. Like Uber drivers, follow the same rules and work for themselves.
+        </p>
+      </li>
+      <li>
+        <h4>reduced costs</h4>
+        <p>
+         And because the central billing service is omitted, point-to-point data or power transmission is realized, the loss is greatly reduced, and the cost of geometric progression is reduced.
+        </p>
+      </li>      
+    </ul>
+  </div>
+</section>
+
+
+<footer class="main-footer" id="MainFooter">
+  <div class="bottom-container">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-4">
+          <div class="widget text-left">
+            <h4 class="widget-title">
+              <a class="website-logo">
+                BAS Lab
+              </a>
+            </h4>
+            <p class="small copyright">
+              Copyright © 2019,bas-lab CO., LTD.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="row justify-content-end mt-2">
+            <div class="col-6 float-right">
+              <div class="widget text-center">
+                <h4 class="widget-title">
+                  Contact
+                </h4>
+                <a href="mailto:contactwork@bighugi.com" class="contact-email small">
+                  bas-lab@bighugi.com
+                </a>
+              </div>
+            </div>          
+            <div class="offset-2 col-4 widget text-center float-right d-none d-md-block">
+              <h4 class="widget-title">
+                SOCIAL
+              </h4>
+              <div class="textwidget">
+                <a href="#MainFooter">
+                  <svg class="icon icon-social">
+                    <use xlink:href="#twitter-square"></use>
+                  </svg>
+                </a>
+                <a href="#MainFooter">
+                  <svg class="icon icon-social">
+                    <use xlink:href="#facebook-square"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/BASChain/secret-demo" target="github">
+                  <svg class="icon icon-social">
+                    <use xlink:href="#github-square"></use>
+                  </svg>
+                </a>              
+              </div>
+            </div>            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- SCRIPTS BEGIN -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="vendor/clipboard/clipboard.min.js"></script>
+<script type="text/javascript" src="js/index-bundle.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

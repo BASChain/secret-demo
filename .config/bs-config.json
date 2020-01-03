@@ -1,0 +1,25 @@
+{
+  "port": 6489,
+  "bind": "localhost",
+  "files": [
+    "./public/**/*.{html,htm,css,js}",
+    "./src/**/*.{js,html,css}",
+    "./build/**/*.{js,html,css}"
+  ],
+  "index": "index.html",
+  "server": [
+    "./build",
+    "./public"
+  ],
+  "watchexps" : [
+    "public/**.js # # reload",
+    "public/**.css # # reloadcss",
+    "public/**.html # # reload",
+    "build/**.js # echo wow # reload"
+  ],
+  "interval"  : 500,
+  "delay"   : 1000,
+  "quiet"   : false,
+  "open"    : true,
+  "http2"   : false
+}
