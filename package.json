@@ -28,7 +28,7 @@
     "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.7",
     "browserify": "^16.5.0",
     "browserify-shim": "^3.8.14",
     "dotenv": "^8.2.0",
